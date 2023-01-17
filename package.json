@@ -1,0 +1,25 @@
+{
+  "name": "melvor-source",
+  "version": "1.0.0",
+  "description": "Dumped source + types for melvoridle.",
+  "files": [
+    "./types"
+  ],
+  "scripts": {
+    "dump": "./dump.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ChanceToZoinks/melvor-source.git"
+  },
+  "author": "ChanceToZoinks",
+  "bugs": {
+    "url": "https://github.com/ChanceToZoinks/melvor-source/issues"
+  },
+  "homepage": "https://github.com/ChanceToZoinks/melvor-source",
+  "private": true,
+  "devDependencies": {
+    "@yokra/webdumper": "^1.0.4",
+    "typescript": "^4.9.4"
+  }
+}
