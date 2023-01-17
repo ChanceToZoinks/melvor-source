@@ -1,5 +1,9 @@
 declare function fillLanguageIdentifiers(category: any, identifier: any): void;
-declare function applyEnglishKey(category: any, identifier: any, value: any): void;
+declare function applyEnglishKey(
+  category: any,
+  identifier: any,
+  value: any
+): void;
 declare function createBlankLanguageCategories(category: any): void;
 declare function setupLangJSON(download?: boolean): any;
 declare function langCreateCSV(): any;

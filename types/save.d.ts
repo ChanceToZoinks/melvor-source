@@ -6,52 +6,52 @@ declare function getItem(key: any): any;
 declare function removeItem(key: any): void;
 declare function saveData(vars?: string): void;
 declare function getSaveGameOld(keyPrefix: any): {
-    version: number;
+  version: number;
 };
 declare function removeSaveOld(keyPrefix: any): void;
 declare function updatePartialSettings(partialSettings: any): {
-    bank: {
-        bankBorder: number;
-        currentEquipDefault: boolean;
-        defaultBankSort: number;
-        defaultItemTab: any[];
-    };
-    mastery: {
-        hideMaxLevel: boolean;
-        confirmationCheckpoint: boolean;
-    };
-    general: {
-        pushNotificationOffline: boolean;
-        pushNotificationFarming: boolean;
-        enabledOfflineCombat: boolean;
-        enableNeutralSpecModifiers: boolean;
-        autoReusePotion: any[];
-        miniSidebar: boolean;
-        autoEquipFood: boolean;
-        autoSwapFood: boolean;
-        continueThievingOnStun: boolean;
-        showPotionTier: boolean[];
-        allowPerfectCook: boolean;
-        showDestroyCropConfirmation: boolean;
-        showAstrologyMaxRollConfirmation: boolean;
-        showQtyInItemNotification: boolean;
-        showItemPreservationNotification: boolean;
-        showSlayerCoinNotification: boolean;
-        combatMinibarShowEquipmentSets: boolean;
-        combatMinibarShowEnemyBars: boolean;
-    };
-    notifications: {
-        combatStunned: boolean;
-        combatSleep: boolean;
-        summoningMark: boolean;
-    };
-    performance: {
-        disableDamageSplashes: boolean;
-        disableProgressBars: boolean;
-    };
-    accessibility: {
-        colourBlindMode: number;
-    };
+  bank: {
+    bankBorder: number;
+    currentEquipDefault: boolean;
+    defaultBankSort: number;
+    defaultItemTab: any[];
+  };
+  mastery: {
+    hideMaxLevel: boolean;
+    confirmationCheckpoint: boolean;
+  };
+  general: {
+    pushNotificationOffline: boolean;
+    pushNotificationFarming: boolean;
+    enabledOfflineCombat: boolean;
+    enableNeutralSpecModifiers: boolean;
+    autoReusePotion: any[];
+    miniSidebar: boolean;
+    autoEquipFood: boolean;
+    autoSwapFood: boolean;
+    continueThievingOnStun: boolean;
+    showPotionTier: boolean[];
+    allowPerfectCook: boolean;
+    showDestroyCropConfirmation: boolean;
+    showAstrologyMaxRollConfirmation: boolean;
+    showQtyInItemNotification: boolean;
+    showItemPreservationNotification: boolean;
+    showSlayerCoinNotification: boolean;
+    combatMinibarShowEquipmentSets: boolean;
+    combatMinibarShowEnemyBars: boolean;
+  };
+  notifications: {
+    combatStunned: boolean;
+    combatSleep: boolean;
+    summoningMark: boolean;
+  };
+  performance: {
+    disableDamageSplashes: boolean;
+    disableProgressBars: boolean;
+  };
+  accessibility: {
+    colourBlindMode: number;
+  };
 };
 declare function doesLocalSaveExist(keyPrefix: any): 0 | 1 | 2;
 declare function deleteLocalSaveInSlot(slotID: any): void;
@@ -61,19 +61,22 @@ declare function importSaveToSlot(saveString: any, slotID: any): any;
 declare function openDeleteMelvorCloudAccount(): void;
 declare function confirmDeleteMelvorCloudAccount(): void;
 declare function copyToClipboard(input: any): void;
-declare function getLocalSaveString(customKey?: boolean, charID?: number): string;
+declare function getLocalSaveString(
+  customKey?: boolean,
+  charID?: number
+): string;
 declare function getSaveStringOld(keyPrefix: any): string;
 declare function getNumericIDMap(): any;
 declare function downloadSave(backup?: boolean, slotID?: number): any;
 declare function isOldItemStats(itemStats: any): boolean;
 declare function isOldMonsterStats(monsterStats: any): boolean;
 declare function convertItemStats(oldItemStats: any): {
-    itemID: number;
-    stats: number[];
+  itemID: number;
+  stats: number[];
 }[];
 declare function convertMonsterStats(oldMonsterStats: any): {
-    monsterID: number;
-    stats: number[];
+  monsterID: number;
+  stats: number[];
 }[];
 declare function loadOldSaveGame(savegame: any): any;
 declare function setBackupSaveDetails(save: any): void;
@@ -87,10 +90,18 @@ declare function hideUIForAnnouncement(id: any): void;
 declare function updateLocalSaveHeaders(): any;
 declare function updateCloudSaveHeaders(): any;
 declare function loadSaveFromString(saveString: any): any;
-declare function processSaveLoadError(slotID: any, isCloud: any, error: any): void;
+declare function processSaveLoadError(
+  slotID: any,
+  isCloud: any,
+  error: any
+): void;
 declare function loadLocalSave(slotID: any): any;
 declare function loadCloudSave(slotID: any): any;
-declare function createNewCharacterInSlot(slotID: any, gamemode: any, characterName: any): any;
+declare function createNewCharacterInSlot(
+  slotID: any,
+  gamemode: any,
+  characterName: any
+): any;
 declare var __awaiter: any;
 declare let currentCharacter: number;
 declare let characterSelected: boolean;

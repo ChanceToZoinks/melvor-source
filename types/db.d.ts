@@ -1,2 +1,1 @@
-declare class MelvorDatabase {
-}
+declare class MelvorDatabase {}

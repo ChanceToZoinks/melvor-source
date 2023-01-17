@@ -16,12 +16,15 @@ done
 echo "Moving updated files from '$built' to '$outdir'..."
 mkdir --parents $outdir ; mv $built/* -t $outdir
 
-num_final=$(ls $outdir | wc -l)
-echo "Number of files downloaded: $num_downloaded"
-echo "Number of files in $outdir:  $num_final"
+echo "Prettifying js files..."
+npx prettier --write $outdir
 
 echo "Cleaning up..."
 rm -rf $dumped
+
+num_final=$(ls $outdir | wc -l)
+echo "Number of files downloaded: $num_downloaded"
+echo "Number of files in $outdir:  $num_final"
 
 if [ $num_downloaded -eq $num_final ]; then
     echo -e '\033[0;32mDownload and transfer was successful.\033[0m'

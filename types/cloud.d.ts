@@ -10,8 +10,14 @@ declare function disconnectPatreon(): void;
 declare function loadCloudOptions(isCloud: any): void;
 declare function checkTestAccess(): void;
 declare function confirmTestAccess(): void;
-declare function checkTestAccessInit(forceLoad?: boolean, accessCheck?: boolean): void;
-declare function checkTestAccessPatreon(forceLoad?: boolean, accessCheck?: boolean): void;
+declare function checkTestAccessInit(
+  forceLoad?: boolean,
+  accessCheck?: boolean
+): void;
+declare function checkTestAccessPatreon(
+  forceLoad?: boolean,
+  accessCheck?: boolean
+): void;
 declare function killPage(): void;
 declare function playFabLoginWithCustomID(playFabID: any): void;
 declare function getPlayFabSave(): void;
@@ -19,8 +25,15 @@ declare function onPlayFabSaveLoad(result: any, error: any): any;
 declare function getPlayFabData(key: any): Promise<any>;
 declare function playFabStoreData(key: any, value: any): void;
 declare function playFabStoreDataCallback(result: any, error: any): void;
-declare function playFabSaveData(forceSave?: boolean, closeAfterSave?: boolean): void;
-declare function saveCallback(result: any, error: any, forceSave?: boolean): void;
+declare function playFabSaveData(
+  forceSave?: boolean,
+  closeAfterSave?: boolean
+): void;
+declare function saveCallback(
+  result: any,
+  error: any,
+  forceSave?: boolean
+): void;
 declare function showPlayFabSaveSuccessfulNotification(): void;
 declare function showPlayFabSaveDeletedNotification(): void;
 declare function createPlayFabSaves(): any;
@@ -32,7 +45,12 @@ declare function queuePlayFabEvents(eventName: any, args: any): void;
 declare function submitQueuedPlayFabEvents(): void;
 declare function fetchLatestTitleNews(): void;
 declare function displayLatestTitleNews(result: any, error: any): void;
-declare function createTitleNewsElement(timestamp: any, title: any, body: any, newsId: any): string;
+declare function createTitleNewsElement(
+  timestamp: any,
+  title: any,
+  body: any,
+  newsId: any
+): string;
 declare function readPlayFabNews(): void;
 declare function loginToMelvorCloud(playFab?: boolean): void;
 declare function registerToMelvorCloud(): void;
@@ -83,7 +101,10 @@ declare let saveAndClose: boolean;
 declare let forceSyncSpamPrevention: number;
 declare let autoCloudSaveInterval: number;
 declare function gameOriginCheck(): boolean;
-declare function checkConnectionToCloud(forceLoad?: boolean, accessCheck?: boolean): void;
+declare function checkConnectionToCloud(
+  forceLoad?: boolean,
+  accessCheck?: boolean
+): void;
 declare function playFabLoginCallback(result: any, error: any): any;
 declare function setAutoCloudSaveInterval(): void;
 declare function linkSteamAccountToPlayFab(): void;

@@ -1,14 +1,18 @@
 declare function loadCharacterSelection(returnToGame?: boolean): void;
 declare function getCloudInfoInSlot(slotID: any): {
-    cloudInfo: any;
-    hasCloud: boolean;
+  cloudInfo: any;
+  hasCloud: boolean;
 };
 declare function getLocalInfoInSlot(slotID: any): any;
 declare function refreshCloudSavesOnClick(): any;
 declare function showLocalSaveSelection(): void;
 declare function showCloudSaveSelection(): void;
 declare function showSaveSelectionLoading(slotLoading: any): void;
-declare function showSaveLoadingError(slotID: any, message: any, isCloud: any): void;
+declare function showSaveLoadingError(
+  slotID: any,
+  message: any,
+  isCloud: any
+): void;
 declare function toggleSaveSelectionView(newView?: number): void;
 declare function checkSaveExpansions(saveInfo: any): any;
 declare function showSaveExpansionError(ns: any): void;

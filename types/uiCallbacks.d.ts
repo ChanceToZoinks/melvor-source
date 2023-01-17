@@ -23,4 +23,10 @@ declare let selectedSpellbook: string;
 declare const combatMenuCount: 6;
 declare let skillsMenu: boolean;
 declare let combatMenu: boolean;
-declare function changePage(page: any, subCategory: number, skill: any, showRaidShop?: boolean, toggleSidebar?: boolean): void;
+declare function changePage(
+  page: any,
+  subCategory: number,
+  skill: any,
+  showRaidShop?: boolean,
+  toggleSidebar?: boolean
+): void;

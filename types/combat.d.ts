@@ -53,8 +53,8 @@ declare let bankItemSettingsMenu: any;
 declare const combatSkills: string[];
 declare let shopMenu: any;
 declare namespace synergyElements {
-    const icons: any[];
-    const tooltips: any[];
+  const icons: any[];
+  const tooltips: any[];
 }
 declare let tutorialMenus: any;
 declare let combatMenus: any;
